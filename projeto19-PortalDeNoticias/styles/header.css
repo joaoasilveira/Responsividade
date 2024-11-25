@@ -1,0 +1,32 @@
+#primary {
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & div {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+#secondary {
+  padding-block: 14px;
+  border: solid 1px var(--stroke-color);
+  border-inline: none;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+  gap: 2rem;
+  text-wrap: nowrap;
+}
+
+@media (width >=80em) {
+  #primary {
+    padding-block: 1.5rem;
+  }
+
+  #secondary {
+    overflow: auto;
+  }
+}
